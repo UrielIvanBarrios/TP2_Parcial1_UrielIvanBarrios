@@ -25,11 +25,13 @@
   "contributors": [],
   "scripts": {
     "dev": "node --watch ./src/app.js",
-		"linter": "npx @biomejs/biome check --write ./src",
-		"applyChanges": "npx biome check --fix --unsafe"
+    "linter": "npx @biomejs/biome check --write ./src",
+    "applyChanges": "npx biome check --fix --unsafe"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4"
